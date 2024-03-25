@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShipmentTracker.Infrastruct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipmentTracker.Core.Contract", "ShipmentTracker.Contract\ShipmentTracker.Core.Contract.csproj", "{5B6FBCD7-FBDE-435E-A805-AC7103BA5CA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerManager", "LoggerManager\LoggerManager.csproj", "{DFC832D7-8F75-4817-BA27-521B7AE47269}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{5B6FBCD7-FBDE-435E-A805-AC7103BA5CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B6FBCD7-FBDE-435E-A805-AC7103BA5CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6FBCD7-FBDE-435E-A805-AC7103BA5CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC832D7-8F75-4817-BA27-521B7AE47269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC832D7-8F75-4817-BA27-521B7AE47269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC832D7-8F75-4817-BA27-521B7AE47269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC832D7-8F75-4817-BA27-521B7AE47269}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{362DD103-2BB8-4756-B4E6-FBB05A53A2AD} = {8E297DC6-931A-43C9-9E6C-53960A47BED3}
 		{6CF0BCBA-696E-42DE-80EB-8673A3209947} = {8E297DC6-931A-43C9-9E6C-53960A47BED3}
 		{5B6FBCD7-FBDE-435E-A805-AC7103BA5CA7} = {362DD103-2BB8-4756-B4E6-FBB05A53A2AD}
+		{DFC832D7-8F75-4817-BA27-521B7AE47269} = {6CF0BCBA-696E-42DE-80EB-8673A3209947}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B405619A-D573-4479-AF53-74E30C9E189B}
