@@ -11,10 +11,12 @@ namespace ShipmentTracker.Core.Domain.Entities
     {
 
         public string ShipmentPlanName { get; set; }
-        public Guid ShipmentID { get; set; }
-        public Guid FromZoneID { get; set; }
-        public Guid ToZoneID { get; set; }
+        public Shipment Shipment { get; set; }
+        public Guid ShipmentId { get; set; }
+        public Guid FromZoneId { get; set; }
+        public Guid ToZoneId { get; set; }
         public string Notes { get; set; }
-        public DateTime TotalETA { get; set; }
+        public DateTime TotalEta { get; set; }
+        public ICollection<ShipmentPlanDetail> ShipmentPlanDetails { get; set; } = new List<ShipmentPlanDetail>(); // Navigation property
     }
 }

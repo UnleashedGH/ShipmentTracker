@@ -11,7 +11,7 @@ public class ShipmentPlanDetailsRepository : BaseRepository<ShipmentPlanDetail> 
 
     public IEnumerable<ShipmentPlanDetail> GetDetailsByMasterId(Guid shipmentPlanId , bool trackChanges)
     {
-        var result = GetByCondition( c=> c.ShipmentPlanID == shipmentPlanId ,trackChanges).ToList();
+        var result = GetByCondition( c=> c.ShipmentPlanId == shipmentPlanId ,trackChanges).ToList();
         return result;
     }
 }

@@ -1,9 +1,5 @@
 ﻿using EasyRepository.EFCore.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace ShipmentTracker.Core.Domain.Entities
 {
@@ -11,8 +7,12 @@ namespace ShipmentTracker.Core.Domain.Entities
     {
 
         public string Name { get; set; }
-        public Guid CountryID { get; set; }
-        public decimal Longtitude { get; set; }
+        public ShipmentPlanDetail FromZoneShipmentPlanDetail { get; set; } = new ShipmentPlanDetail();
+        public ShipmentPlanDetail ToZoneShipmentPlanDetail { get; set; } = new ShipmentPlanDetail();
+        public Country Country { get; set; } = new Country();
+        public Guid CountryId { get; set; }
+        public decimal Longitude { get; set; }
+        
         public decimal Latitude { get; set; }
     }
 }

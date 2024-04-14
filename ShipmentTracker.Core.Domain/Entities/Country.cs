@@ -9,6 +9,7 @@ namespace ShipmentTracker.Core.Domain.Entities
 {
     public sealed class Country : EasyBaseEntity<Guid>
     {
+        public Zone Zone { get; set; } = new Zone();
         public string CountryName { get; set; }
     }
 }

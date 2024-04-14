@@ -13,10 +13,10 @@ namespace ShipmentTracker.Infrastructure.Presistance.EntityConfiguration
     {
         public void Configure(EntityTypeBuilder<Shipment> builder)
         {
-            builder.HasMany(s => s.Cargos)
-                   .WithOne(c => c.Shipment)
-                   .HasForeignKey(c => c.ShipmentGuid)
-                   .OnDelete(DeleteBehavior.Restrict); 
+            builder.HasMany(e => e.Cargos)
+                .WithOne(e => e.Shipment)
+                .HasForeignKey(e=> e.ShipmentGuid)
+                .IsRequired();
         }
     }
 }

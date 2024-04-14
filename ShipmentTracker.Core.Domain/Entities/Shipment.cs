@@ -15,7 +15,7 @@ namespace ShipmentTracker.Core.Domain.Entities
         public decimal MaxWeight { get; set; }
         public DateTime ShippingDate { get; set; }
         public decimal ShippingCost { get; set; }
-
+        public ShipmentPlan ShipmentPlan { get; set; }
         public ICollection<Cargo> Cargos { get; set; } = new List<Cargo>(); // Navigation property
 
 
