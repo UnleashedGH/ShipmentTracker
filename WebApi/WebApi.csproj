@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ShipmentTracker.Contract\ShipmentTracker.Core.Contract.csproj" />
     <ProjectReference Include="..\ShipmentTracker.Core.Application\ShipmentTracker.Core.Application.csproj" />
-    <ProjectReference Include="..\ShipmentTracker.Core.Domain\ShipmentTracker.Core.Domain.csproj" />
     <ProjectReference Include="..\ShipmentTracker.Infrastructure\ShipmentTracker.Infrastructure.Presistance.csproj" />
     <ProjectReference Include="..\ShipmentTracker.Presentation\ShipmentTracker.Infrastructure.ApiEndPoints.csproj" />
   </ItemGroup>

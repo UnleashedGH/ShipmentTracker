@@ -14,4 +14,20 @@ public class VendorRepository : BaseRepository<Vendor> , IVendorRepository
         var result = GetAll(trackChanges).OrderBy(c => c.VendorFirstName).ToList();
         return result;
     }
+
+    public Vendor GetById(Guid id)
+    {
+        var result = GetByCondition(x => x.Id == id , true).SingleOrDefault();
+        if (result == null)
+            throw new ArgumentException("Vendor not found");
+        return result;
+    }
+
+    public Vendor? GetByName(string vendorFirstName , string vendorLastName)
+    {
+        var result = GetByCondition(x => x.VendorFirstName == vendorFirstName && x.VendorLastName == vendorLastName, true)
+            .SingleOrDefault();
+        
+        return result;
+    }
 }

@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShipmentTracker.Core.Contract.DTO.Vendor;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ShipmentTracker.Core.Application.Service.Contract;
 
 namespace ShipmentTracker.Infrastructure.ApiEndPoints.V1
 {
@@ -13,18 +9,24 @@ namespace ShipmentTracker.Infrastructure.ApiEndPoints.V1
     [ApiController]
     public class VendorController : BaseController
     {
+        private readonly IServiceManager _serviceManager;
 
+        public VendorController(IServiceManager serviceManager)
+        {
+            _serviceManager = serviceManager;
+        }
         [HttpGet]
         public IActionResult Get()
         {
-            return null;
+           IList<VendorDto> vendors =  _serviceManager.VendorService.GetVendors();
+           return Ok(vendors);
         }
 
         [HttpPost]
-
-        public IActionResult Post(CreateVendorDto DTO)
+        public IActionResult Post(CreateVendorDto newVendor)
         {
-            return null;
+             _serviceManager.VendorService.CreateVendor(newVendor);
+             return Ok();
         }
     }
 

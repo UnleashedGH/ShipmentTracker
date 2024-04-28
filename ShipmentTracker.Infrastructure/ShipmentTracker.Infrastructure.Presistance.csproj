@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShipmentTracker.Core.Application\ShipmentTracker.Core.Application.csproj" />
+    <ProjectReference Include="..\ShipmentTracker.Core.Domain\ShipmentTracker.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,5 +8,6 @@ namespace ShipmentTracker.Core.Application.Service.Contract
 {
     public interface IServiceManager
     {
+        IVendorService VendorService { get; }
     }
 }

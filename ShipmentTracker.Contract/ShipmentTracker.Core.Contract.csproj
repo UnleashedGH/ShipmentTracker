@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DTO\Cargo\" />
+    <Folder Include="DTO\Country\" />
+    <Folder Include="DTO\ShipmentPlanDetail\" />
+    <Folder Include="DTO\ShipmentPlan\" />
+    <Folder Include="DTO\Shipment\" />
+    <Folder Include="DTO\Zone\" />
     <Folder Include="Validation\" />
   </ItemGroup>
 
@@ -15,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShipmentTracker.Core.Application\ShipmentTracker.Core.Application.csproj" />
+    <ProjectReference Include="..\ShipmentTracker.Core.Domain\ShipmentTracker.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

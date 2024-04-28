@@ -14,6 +14,7 @@ namespace ShipmentTracker.Core.Contract.AutoMapper
         public MappingProfile()
         {
             CreateMap<Vendor, CreateVendorDto>();
+            CreateMap<Vendor, VendorDto>();
         }
     }
 }
